@@ -10,14 +10,13 @@ async function fakeApiCall(name, delayMs) {
 test.describe('Async/Await basics', () => {
   test('BROKEN: missing await', async () => {
     // ❌ forgot to await
-    const result = fakeApiCall('Task A', 200);
-    // result is a Promise, not the actual string value
-    expect(String(result)).toContain('Promise');
+    const result = fakeApiCall('Task A', 200); // ❌
+    expect(result).toBe('Task A done in 200ms');
   });
 
   test('FIXED: with await', async () => {
     // ✅ await resolves the Promise into the value
-    const result = await fakeApiCall('Task A', 200);
-    expect(result).toBe('Task A done in 200ms');
+    const result = await fakeApiCall('Task A', 200); // ✅
+    expect(result).toBe('Task A done in 200ms'); 
   });
 });
