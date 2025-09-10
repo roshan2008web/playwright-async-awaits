@@ -44,8 +44,3 @@ tests/
 - Run `npm test`
 - Compare sequential vs parallel times in console output.
 - Notice how `Promise.all` overlaps tasks and saves time.
-
-## 🧩 Next Steps
-- Add error handling with `try/catch`
-- Simulate failures and see how `Promise.all` behaves
-- Extend to real API calls later (auth, schema validation, etc.)
