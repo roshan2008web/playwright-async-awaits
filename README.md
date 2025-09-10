@@ -1,4 +1,4 @@
-# Playwright Async Labs 🚀
+# Playwright Async Awaits 🚀
 
 This repo is a hands-on lab for **QA engineers and testers** learning JavaScript async/await and `Promise.all` using Playwright.
 
